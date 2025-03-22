@@ -3,7 +3,7 @@ export { NavBar } from './layout/NavBar';
 export { Footer } from './layout/Footer';
 
 // Features
-export { ConnectButton } from './features/ConnectButton';
+export { LedgerConnect } from './features/LedgerConnect';
 
 // Sections
 export { Hero } from './section/Hero';

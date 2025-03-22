@@ -1,6 +1,6 @@
 'use client';
 
-import { ConnectButton } from "@/components";
+import { LedgerConnect } from "@/components";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TEXT } from "@/constants/text";
@@ -33,7 +33,7 @@ export const NavBar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <ConnectButton />
+            <LedgerConnect />
           </div>
         </div>
       </div>

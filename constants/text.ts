@@ -11,15 +11,15 @@ interface TextContent {
   navigation: {
     logo: string;
   };
-  connect: {
+  ledger: {
     connect: string;
-    connected: string;
     disconnect: string;
-    select_wallet: string;
-    address_start: string;
-    cancel: string;
-    wrong_network: string;
-    switch_network: string;
+    connected_address: string;
+    browser_not_supported: string;
+    connection_error: string;
+    access_denied: string;
+    check_ledger: string;
+    disconnect_error: string;
   };
   notFound: {
     title: string;
@@ -27,47 +27,30 @@ interface TextContent {
     description: string;
     backHome: string;
   };
-  transaction: {
-    recipient: string;
-    amount: string;
-    max: string;
-    send: string;
-    confirming_wallet: string;
-    confirming_transaction: string;
-    confirmed: string;
-    view_etherscan: string;
-    error: string;
-    error_confirming: string;
-    testnet_warning: string;
-    native_token: string;
-    balance: string;
-    address: string;
-    status: string;
-  };
 }
 
 export const TEXT: TextContent = {
   metadata: {
-    title: "Next.js Boilerplate - Auth Metamask | wagmi | viem",
-    description: "Start developing your Web3 application with Next.js, Wagmi, and Viem.",
+    title: "Next.js Boilerplate - Auth XRPL",
+    description: "Connect to XRPL with Ledger",
     lang: "en"
   },
   hero: {
     title: "Next.js Boilerplate",
-    subtitle: "Start developing your Web3 application with Next.js, Wagmi, and Viem."
+    subtitle: "Connect to XRPL with Ledger"
   },
   navigation: {
     logo: "Next.js Boilerplate"
   },
-  connect: {
-    connect: "Login",
-    connected: "Connected",
+  ledger: {
+    connect: "Connect Ledger (XRP)",
     disconnect: "Disconnect",
-    select_wallet: "Select wallet",
-    address_start: "Connected with",
-    cancel: "Cancel",
-    wrong_network: "Wrong network",
-    switch_network: "Switch network"
+    connected_address: "Connected address:",
+    browser_not_supported: "Your browser does not support WebUSB. Please use Chrome, Edge, or Opera.",
+    connection_error: "Connection error",
+    access_denied: "USB access denied. Please:\n1. Connect your Ledger\n2. Unlock it\n3. Open XRP app\n4. Try again",
+    check_ledger: "To connect your Ledger:\n1. Make sure your Ledger is connected and unlocked\n2. Open the XRP app on your Ledger\n3. Try connecting again",
+    disconnect_error: "Error disconnecting"
   },
   notFound: {
     title: "404",
@@ -75,21 +58,4 @@ export const TEXT: TextContent = {
     description: "Oops ! This page doesn't exist.",
     backHome: "Back to Home"
   },
-  transaction: {
-    recipient: "Recipient Address",
-    amount: "Amount",
-    max: "Max",
-    send: "Send",
-    confirming_wallet: "Confirming in wallet...",
-    confirming_transaction: "Confirming transaction...",
-    confirmed: "Transaction confirmed!",
-    view_etherscan: "View on Etherscan",
-    error: "Error",
-    error_confirming: "Error confirming",
-    testnet_warning: "Transactions on {network} use test {symbol}.",
-    native_token: "Native Token",
-    balance: "Balance",
-    address: "Address",
-    status: "Status"
-  }
 }; 

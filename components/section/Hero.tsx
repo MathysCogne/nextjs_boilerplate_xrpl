@@ -18,12 +18,14 @@ export const Hero = () => {
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
           {TEXT.hero.subtitle}
         </p>
-        <div>
-        <Link href="https://github.com/MathysCogne/nextjs_boilerplate_web3-auth_metamask" target="_blank">
-          <Button variant="secondary" size="md">
-            Repo GitHub
-          </Button>
-        </Link>
+        
+        <div className="flex flex-col items-center gap-8">
+          
+          <Link href="https://github.com/MathysCogne/nextjs_boilerplate_web3-auth_metamask" target="_blank">
+            <Button variant="outline" size="md">
+              Repo GitHub
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
